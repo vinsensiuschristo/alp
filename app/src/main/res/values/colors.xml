@@ -12,4 +12,8 @@
     <color name="primary">#DEE1E5</color>
     <color name="button">#6777C3</color>
     <color name="textColor">#000051</color>
+
+<!--ButtonTheme-->
+    <color name="blueButton">#375dbc</color>
+    <color name="orangeButton">#dd4b39</color>
 </resources>
