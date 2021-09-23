@@ -30,7 +30,7 @@
         android:fontFamily="@font/rubik_light"
         android:text="Sign in with your username or email and password to use tour account"
         android:textColor="@color/black"
-        android:textSize="17dp"
+        android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -85,7 +85,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
+        android:id="@+id/buttonLogin"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -110,7 +110,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:backgroundTint="@color/orangeButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
         android:textColor="@color/white"
         android:background="@drawable/button_rounded"/>
 

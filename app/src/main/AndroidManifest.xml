@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Alp">
         <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:theme="@style/NavDrawer"/>
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.NewTheme">
