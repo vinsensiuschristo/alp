@@ -8,31 +8,36 @@
     tools:context=".HomeActivity"
     android:id="@+id/drawerLayout">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <LinearLayout
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_heroes"
             android:layout_width="match_parent"
-            android:layout_height="?actionBarSize"
-            android:id="@+id/layoutToolbar"
-            android:background="@color/primary"
-            android:orientation="horizontal"
-            android:paddingStart="15dp"
-            android:paddingEnd="15dp"
-            android:gravity="center_vertical"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_row"
+            android:layout_marginTop="55dp"/>
+    </RelativeLayout>
 
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:id="@+id/imageMenu"
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/ic_baseline_menu_24" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        </LinearLayout>
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar"
+            android:background="@color/primary"/>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_container"/>
+
+    </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"

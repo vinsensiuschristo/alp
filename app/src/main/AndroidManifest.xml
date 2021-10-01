@@ -10,9 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Alp">
         <activity
+            android:name=".Activity.ReportActivity"
+            android:exported="true"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/Theme.Alp"/>
+        <activity
+            android:name=".Activity.ActivityDownload"
+            android:exported="true"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".Activity.DetailProjectActivity"
+            android:exported="true" />
+        <activity
             android:name=".HomeActivity"
             android:exported="true"
-            android:theme="@style/NavDrawer"/>
+            android:theme="@style/Theme.NewTheme" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
