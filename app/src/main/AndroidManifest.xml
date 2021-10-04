@@ -10,10 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Alp">
         <activity
+            android:name=".Activity.UpdateProfileActivity"
+            android:exported="true"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/Theme.UpdateProfileTheme"/>
+        <activity
             android:name=".Activity.ReportActivity"
             android:exported="true"
             android:parentActivityName=".HomeActivity"
-            android:theme="@style/Theme.Alp"/>
+            android:theme="@style/Theme.Alp" />
         <activity
             android:name=".Activity.ActivityDownload"
             android:exported="true"

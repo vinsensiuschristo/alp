@@ -73,7 +73,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             case R.id.menuAbout:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new AboutFragment()).commit();
                 break;
-            case R.id.home:
+            case R.id.menuHome:
                 Intent homeIntent = new Intent(this, HomeActivity.class);
                 startActivity(homeIntent);
                 break;
