@@ -1,12 +1,19 @@
 package com.example.alp.Data;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.CountDownTimer;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,8 +22,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.example.alp.HomeActivity;
 import com.example.alp.R;
 import com.example.alp.Activity.DetailProjectActivity;
+import com.example.alp.HomeActivity;
 
 import java.util.ArrayList;
 
@@ -55,8 +64,83 @@ public class ListItemAdapter extends RecyclerView.Adapter<ListItemAdapter.ListVi
         holder.btnUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(holder.itemView.getContext(), "Update " +
-                        listListItems.get(holder.getAdapterPosition()).getName(), Toast.LENGTH_SHORT).show();
+//                Toast.makeText(holder.itemView.getContext(), "Update " +
+//                        listListItems.get(holder.getAdapterPosition()).getName(), Toast.LENGTH_SHORT).show();
+                ////
+//                showCustomDialog();
+                AlertDialog.Builder builder = new AlertDialog.Builder(v.getRootView().getContext());
+                View dialogView = LayoutInflater.from(v.getRootView().getContext()).inflate(R.layout.progress_bar_layout, null);
+
+                ProgressBar progressBar;
+                TextView textViewProgress;
+                int progressBarStatus = 0;
+                int i = 0;
+                CountDownTimer mCountDownTimer;
+
+                progressBar = dialogView.findViewById(R.id.progressBar);
+                textViewProgress = dialogView.findViewById(R.id.progress);
+
+//                Progress
+//                progressBarStatus = progressBarStatus + 10;
+//                progressBar.setProgress(progressBarStatus);
+//                progressBar.setMax(100);
+//
+//                mCountDownTimer=new CountDownTimer(10000,1000) {
+//
+//                    @Override
+//                    public void onTick(long millisUntilFinished) {
+//                        progressBar.setVisibility(View.VISIBLE);
+//                        Log.v("Log_tag", "Tick of Progress"+ i + millisUntilFinished);
+//                        i++;
+//                        progressBar.setProgress((int) i*100/(5000/1000));
+//                        textViewProgress.setText(progressBar.getProgress()+"%");
+//
+//                    }
+//
+//                    @Override
+//                    public void onFinish() {
+//                        //Do what you want
+//                        i++;
+//                        progressBar.setProgress(100);
+//                        progressBar.setVisibility(View.INVISIBLE);
+//                        textViewProgress.setVisibility(View.INVISIBLE);
+////                        showDialog();
+//                        // set title dialog
+//                        builder.setTitle("Notifikasi");
+//
+//                        // set pesan dari dialog
+//                        builder
+//                                .setMessage("Download Selesai")
+//                                .setIcon(R.mipmap.ic_launcher)
+//                                .setCancelable(false)
+////                .setPositiveButton("Ya",new DialogInterface.OnClickListener() {
+////                    public void onClick(DialogInterface dialog,int id) {
+////                        // jika tombol diklik, maka akan menutup activity ini
+////                        MainActivity.this.finish();
+////                    }
+////                })
+//                                .setPositiveButton("Ok",new DialogInterface.OnClickListener() {
+//                                    public void onClick(DialogInterface dialog, int id) {
+//                                        // jika tombol ini diklik, akan menutup dialog
+//                                        // dan tidak terjadi apa2
+//                                        dialog.cancel();
+//                                    }
+//                                });
+//
+//                        // membuat alert dialog dari builder
+//                        AlertDialog alertDialog = builder.create();
+//
+//                        // menampilkan alert dialog
+//                        alertDialog.show();
+//
+//                    }
+//                };
+//                mCountDownTimer.start();
+////              Sampai Sini
+
+                builder.setView(dialogView);
+                builder.setCancelable(true);
+                builder.show();
             }
         });
 
@@ -101,5 +185,40 @@ public class ListItemAdapter extends RecyclerView.Adapter<ListItemAdapter.ListVi
     public interface OnItemClickCallback {
         void onItemClicked(ListItem data);
     }
+
+
+//    private void showDialog(){
+////        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+////                this);
+//        AlertDialog.Builder builder = new AlertDialog.Builder(v.getRootView().getContext());
+//
+//        // set title dialog
+//        builder.setTitle("Notifikasi");
+//
+//        // set pesan dari dialog
+//        builder
+//                .setMessage("Download Selesai")
+//                .setIcon(R.mipmap.ic_launcher)
+//                .setCancelable(false)
+////                .setPositiveButton("Ya",new DialogInterface.OnClickListener() {
+////                    public void onClick(DialogInterface dialog,int id) {
+////                        // jika tombol diklik, maka akan menutup activity ini
+////                        MainActivity.this.finish();
+////                    }
+////                })
+//                .setPositiveButton("Ok",new DialogInterface.OnClickListener() {
+//                    public void onClick(DialogInterface dialog, int id) {
+//                        // jika tombol ini diklik, akan menutup dialog
+//                        // dan tidak terjadi apa2
+//                        dialog.cancel();
+//                    }
+//                });
+//
+//        // membuat alert dialog dari builder
+//        AlertDialog alertDialog = builder.create();
+//
+//        // menampilkan alert dialog
+//        alertDialog.show();
+//    }
 }
 

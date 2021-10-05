@@ -66,16 +66,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="favorite"
-                android:textSize="12sp" />
+                android:text="Detail"
+                android:fontFamily="@font/rubik_regular"
+                android:textSize="12sp"
+                android:background="@color/blueButton"/>
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnUpdate"
                 style="@style/secondaryGRPButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="share"
-                android:textSize="12sp" />
+                android:text="Update"
+                android:fontFamily="@font/rubik_regular"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/blueButton"/>
         </LinearLayout>
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
