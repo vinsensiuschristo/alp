@@ -14,14 +14,14 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Button;
 
-import com.example.alp.Data.ListItem;
-import com.example.alp.Data.ListItemAdapter;
+import com.example.alp.model.ListItem;
+import com.example.alp.adapter.ListItemAdapter;
 import com.example.alp.Data.ListItemData;
-import com.example.alp.Activity.AboutFragment;
-import com.example.alp.Activity.ActivityDownload;
-import com.example.alp.Activity.DetailProjectActivity;
-import com.example.alp.Activity.ProfileFragment;
-import com.example.alp.Activity.ReportActivity;
+import com.example.alp.ui.about.AboutFragment;
+import com.example.alp.ui.download.ActivityDownload;
+import com.example.alp.ui.detailproject.DetailProjectActivity;
+import com.example.alp.ui.profile.ProfileFragment;
+import com.example.alp.ui.report.ReportActivity;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;

@@ -20,21 +20,21 @@
             android:value="AIzaSyCaUFsklhUr-KWVJ3VGfCqdkykHOZGPhLo"/>
 
         <activity
-            android:name=".Activity.UpdateProfileActivity"
+            android:name=".ui.profile.UpdateProfileActivity"
             android:exported="true"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/Theme.UpdateProfileTheme"/>
         <activity
-            android:name=".Activity.ReportActivity"
+            android:name=".ui.report.ReportActivity"
             android:exported="true"
             android:parentActivityName=".HomeActivity"
             android:theme="@style/Theme.Alp" />
         <activity
-            android:name=".Activity.ActivityDownload"
+            android:name=".ui.download.ActivityDownload"
             android:exported="true"
             android:parentActivityName=".HomeActivity" />
         <activity
-            android:name=".Activity.DetailProjectActivity"
+            android:name=".ui.detailproject.DetailProjectActivity"
             android:exported="true"
             android:parentActivityName=".HomeActivity"/>
         <activity

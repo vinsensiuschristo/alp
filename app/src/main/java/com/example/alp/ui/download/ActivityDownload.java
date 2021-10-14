@@ -1,4 +1,4 @@
-package com.example.alp.Activity;
+package com.example.alp.ui.download;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;

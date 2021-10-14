@@ -1,4 +1,4 @@
-package com.example.alp.Data;
+package com.example.alp.model;
 
 public class ListItem {
     private String name;

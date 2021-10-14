@@ -1,31 +1,25 @@
-package com.example.alp.Data;
+package com.example.alp.adapter;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.app.ProgressDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.CountDownTimer;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.example.alp.HomeActivity;
 import com.example.alp.R;
-import com.example.alp.Activity.DetailProjectActivity;
-import com.example.alp.HomeActivity;
+import com.example.alp.model.ListItem;
+import com.example.alp.ui.detailproject.DetailProjectActivity;
 
 import java.util.ArrayList;
 

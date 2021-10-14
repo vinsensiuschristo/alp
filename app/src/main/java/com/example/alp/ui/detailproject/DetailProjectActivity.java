@@ -1,4 +1,4 @@
-package com.example.alp.Activity;
+package com.example.alp.ui.detailproject;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,9 +6,12 @@ import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.example.alp.R;
+import com.example.alp.ui.map.MapFragment;
+import com.example.alp.ui.notuploaded.NotuploadedFragment;
+import com.example.alp.ui.uploaded.UploadedFragment;
+import com.example.alp.ui.unfinished.UnfinishedFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class DetailProjectActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {

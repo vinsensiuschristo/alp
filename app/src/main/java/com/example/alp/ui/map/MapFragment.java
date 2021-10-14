@@ -1,4 +1,4 @@
-package com.example.alp.Activity;
+package com.example.alp.ui.map;
 
 import android.os.Bundle;
 
