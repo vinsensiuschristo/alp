@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/textIdGallery"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="false"
+            android:text="ID Gallery : " />
+
+        <TextView
+            android:id="@+id/idGallery"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="false"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/textIdGallery"
+            android:text="ID Gallery" />
+
+        <TextView
+            android:id="@+id/textNamaGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textIdGallery"
+            android:layout_alignParentEnd="false"
+            android:layout_marginTop="10dp"
+            android:text="Nama Gallery : "
+            android:textSize="11dp"/>
+
+
+        <TextView
+            android:id="@+id/namaGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idGallery"
+            android:layout_alignParentEnd="false"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/textNamaGallery"
+            android:text="Nama Gallery "
+            android:textSize="11dp"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/textAlamatGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textNamaGallery"
+            android:layout_alignParentEnd="false"
+            android:layout_marginTop="10dp"
+            android:text="Alamat Gallery : "
+            android:textSize="11dp"/>
+
+        <TextView
+            android:id="@+id/alamatGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namaGallery"
+            android:layout_alignParentEnd="false"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/textAlamatGallery"
+            android:text="Alamat Gallery "
+            android:textSize="11dp"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/textKotaGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textAlamatGallery"
+            android:layout_alignParentEnd="false"
+            android:layout_marginTop="10dp"
+            android:text="Kota Gallery : "
+            android:textSize="11dp"/>
+
+        <TextView
+            android:id="@+id/kotaGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alamatGallery"
+            android:layout_alignParentEnd="false"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/textAlamatGallery"
+            android:text="Kota Gallery "
+            android:textSize="11dp"
+            android:ellipsize="end"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
