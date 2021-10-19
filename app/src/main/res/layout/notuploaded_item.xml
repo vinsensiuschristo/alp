@@ -12,7 +12,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp">
+        android:padding="8dp"
+        android:id="@+id/relativeLayout1">
 
         <TextView
             android:id="@+id/textIdGallery"
@@ -20,7 +21,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="false"
-            android:text="ID Gallery : " />
+            android:text="ID Gallery : "
+            android:fontFamily="@font/rubik_regular"/>
 
         <TextView
             android:id="@+id/idGallery"
@@ -30,7 +32,8 @@
             android:layout_alignParentEnd="false"
             android:layout_marginStart="20dp"
             android:layout_toEndOf="@+id/textIdGallery"
-            android:text="ID Gallery" />
+            android:text="ID Gallery"
+            android:fontFamily="@font/rubik_regular"/>
 
         <TextView
             android:id="@+id/textNamaGallery"
@@ -40,7 +43,8 @@
             android:layout_alignParentEnd="false"
             android:layout_marginTop="10dp"
             android:text="Nama Gallery : "
-            android:textSize="11dp"/>
+            android:textSize="11dp"
+            android:fontFamily="@font/rubik_regular"/>
 
 
         <TextView
@@ -54,7 +58,8 @@
             android:layout_toEndOf="@+id/textNamaGallery"
             android:text="Nama Gallery "
             android:textSize="11dp"
-            android:ellipsize="end"/>
+            android:ellipsize="end"
+            android:fontFamily="@font/rubik_regular"/>
 
         <TextView
             android:id="@+id/textAlamatGallery"
@@ -64,7 +69,8 @@
             android:layout_alignParentEnd="false"
             android:layout_marginTop="10dp"
             android:text="Alamat Gallery : "
-            android:textSize="11dp"/>
+            android:textSize="11dp"
+            android:fontFamily="@font/rubik_regular"/>
 
         <TextView
             android:id="@+id/alamatGallery"
@@ -77,7 +83,8 @@
             android:layout_toEndOf="@+id/textAlamatGallery"
             android:text="Alamat Gallery "
             android:textSize="11dp"
-            android:ellipsize="end"/>
+            android:ellipsize="end"
+            android:fontFamily="@font/rubik_regular"/>
 
         <TextView
             android:id="@+id/textKotaGallery"
@@ -87,7 +94,8 @@
             android:layout_alignParentEnd="false"
             android:layout_marginTop="10dp"
             android:text="Kota Gallery : "
-            android:textSize="11dp"/>
+            android:textSize="11dp"
+            android:fontFamily="@font/rubik_regular"/>
 
         <TextView
             android:id="@+id/kotaGallery"
@@ -100,7 +108,57 @@
             android:layout_toEndOf="@+id/textAlamatGallery"
             android:text="Kota Gallery "
             android:textSize="11dp"
-            android:ellipsize="end"/>
+            android:ellipsize="end"
+            android:fontFamily="@font/rubik_regular"/>
+
+
+        //Image Button
+
+        <ImageButton
+            android:id="@+id/uploadAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textKotaGallery"
+            android:layout_alignStart="@+id/textKotaGallery"
+            android:layout_marginStart="197dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_action_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/uploadAudio"
+            android:layout_marginStart="-59dp"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@+id/uploadAudio"
+            android:fontFamily="@font/rubik_regular"
+            android:maxLines="1"
+            android:text="Upload Audio"
+            android:textSize="11dp" />
+
+        <ImageButton
+            android:id="@+id/uploadData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kotaGallery"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/uploadAudio"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_upload_data" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/uploadData"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/uploadAudio"
+            android:fontFamily="@font/rubik_regular"
+            android:maxLines="1"
+            android:text="Upload Data"
+            android:textSize="11dp" />
 
     </RelativeLayout>
 

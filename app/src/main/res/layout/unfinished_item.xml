@@ -19,7 +19,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="false"
-            android:text="ID Gallery : " />
+            android:text="ID Gallery : "
+            android:fontFamily="@font/rubik_regular"/>
 
         <TextView
             android:id="@+id/idGallery"
@@ -29,7 +30,8 @@
             android:layout_alignParentEnd="false"
             android:layout_marginStart="20dp"
             android:layout_toEndOf="@+id/textIdGallery"
-            android:text="ID Gallery" />
+            android:text="ID Gallery"
+            android:fontFamily="@font/rubik_regular"/>
 
         <TextView
             android:id="@+id/textNamaGallery"
@@ -39,7 +41,8 @@
             android:layout_alignParentEnd="false"
             android:layout_marginTop="10dp"
             android:text="Nama Gallery : "
-            android:textSize="11dp"/>
+            android:textSize="11dp"
+            android:fontFamily="@font/rubik_regular"/>
 
 
         <TextView
@@ -53,7 +56,8 @@
             android:layout_toEndOf="@+id/textNamaGallery"
             android:text="Nama Gallery "
             android:textSize="11dp"
-            android:ellipsize="end"/>
+            android:ellipsize="end"
+            android:fontFamily="@font/rubik_regular"/>
 
         <TextView
             android:id="@+id/textAlamatGallery"
@@ -63,7 +67,8 @@
             android:layout_alignParentEnd="false"
             android:layout_marginTop="10dp"
             android:text="Alamat Gallery : "
-            android:textSize="11dp"/>
+            android:textSize="11dp"
+            android:fontFamily="@font/rubik_regular"/>
 
         <TextView
             android:id="@+id/alamatGallery"
@@ -76,7 +81,8 @@
             android:layout_toEndOf="@+id/textAlamatGallery"
             android:text="Alamat Gallery "
             android:textSize="11dp"
-            android:ellipsize="end"/>
+            android:ellipsize="end"
+            android:fontFamily="@font/rubik_regular"/>
 
         <TextView
             android:id="@+id/textKotaGallery"
@@ -86,7 +92,8 @@
             android:layout_alignParentEnd="false"
             android:layout_marginTop="10dp"
             android:text="Kota Gallery : "
-            android:textSize="11dp"/>
+            android:textSize="11dp"
+            android:fontFamily="@font/rubik_regular"/>
 
         <TextView
             android:id="@+id/kotaGallery"
@@ -99,7 +106,8 @@
             android:layout_toEndOf="@+id/textAlamatGallery"
             android:text="Kota Gallery "
             android:textSize="11dp"
-            android:ellipsize="end"/>
+            android:ellipsize="end"
+            android:fontFamily="@font/rubik_regular"/>
 
     </RelativeLayout>
 
