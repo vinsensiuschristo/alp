@@ -55,4 +55,10 @@ dependencies {
 
     //Chart
     implementation 'com.github.AnyChart:AnyChart-Android:1.1.2'
+
+    //Volley
+    implementation 'com.android.volley:volley:1.2.1'
+
+    //RecyclerView
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
 }
